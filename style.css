@@ -3,20 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: ;
 }
 
 body
 {
     max-width: 100%;
-    max-height: 100%;
-    line-height: 1.6;
+    width: 960px;
+    margin: 5rem auto;
+    line-height:1.6 ;
     font-family: Arial, sans-serif;
+    background-color: rgb(41, 40, 40);
+    
 }
 
- .main
+.main
 {
     display: flex;
-    gap:1.5rem;
 }
 
 .side-one 
@@ -24,17 +27,24 @@ body
     position:relative;
     color: #fff;
     text-align: center;
-    width: 50%;
-    /* height: 41rem; */
-    height: 100vh;
-    background-image:url(/images/HD-wallpaper-wending-cubes-01-3d-cube-dark-abstract-black-render-rotating-rotation.jpg);
+    width: 40%;
+    height: 50%;
+    /* background-image:url(images/HD-wallpaper-wending-cubes-01-3d-cube-dark-abstract-black-render-rotating-rotation.jpg); */
+    background-size: 100% 100%;
+}
+
+.side-one img
+{
+    width: 100%;
+    height: 545px;
+    object-fit: fill;
 }
 
 .wrapper
 {
    position: absolute;
    bottom :7rem;
-   left: 7rem;
+   left: 1rem;
    text-align: center;
    color: #fff;
    text-align: center;
@@ -42,42 +52,38 @@ body
 
  .side-one  h2
 {
-   font-size: 2rem;
+   font-size: 1.2rem;
    line-height: 3;
    font-weight: 900;
    text-transform: capitalize;
-  
+   text-align: left;
 }
 
  .side-one p
 {
     letter-spacing:1px;
     text-align: justify;
-    width: 400px;
-    font-size: 1rem;
+    width: 300px;
+    font-size: 0.8rem;
     font-weight: 300;
     margin-top: 1rem;
 }
 
-
 .side-two
 {
-    width: 50%;
+    width: 60%;
+    height: 50%;
     text-align:center;
+    background-color: #fff;
 }
 
 .side-two h1
 {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.2em;
     font-weight: 50;
-    line-height: 1;
-    margin-left: 110px;
-}
-
-form
-{
-    
+    margin-top: 0.8rem;
+    margin-left: 80px;
 }
 
 .forms
@@ -86,11 +92,12 @@ form
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    padding-top:30px;
+    padding-top:15px;
 }
 
 .forms label
 {
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -98,7 +105,7 @@ form
 {
     width: 70%;
     height: 2rem;
-    padding: 20px 20px;
+    padding: 20px 15px;
      background-color:#f2edf3;
      border: none;
      border-radius: 0.5rem;
@@ -122,7 +129,7 @@ form
 
 .terms h3
 {
-    padding-right: 230px;
+    padding-right: 100px;
     font-weight: 200;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -132,7 +139,7 @@ input[type=submit]
 {
     font: 700;
     width: 150px;
-    height: 50px;
+    height: 40px;
     border-radius: 20px;
     outline: none;
     background-color: black;
@@ -142,11 +149,17 @@ input[type=submit]
 
 .or 
 {
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
     position: relative;
+} 
+
+.nort h3
+{
+    font-size: 0.2;
+    font-weight: 100;
 }
 
 .lin
@@ -154,11 +167,14 @@ input[type=submit]
     text-transform: capitalize;
     width: 30%;
     height: 0.1rem;
-    margin-top: 12px;
+    margin-top: 5px;
     background-color: #eee2e2;
 }
 
 footer
 {
-    margin-top: 2rem;
-}
+    margin-top:;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 8px;
+} 
