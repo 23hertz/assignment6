@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+ .main
+{
+    display: flex;
+    gap:1.5rem;
+}
+
+.side-one 
+{
+    position:relative;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    /* height: 41rem; */
+    height: 100vh;
+    background-image:url(/images/HD-wallpaper-wending-cubes-01-3d-cube-dark-abstract-black-render-rotating-rotation.jpg);
+}
+
+.wrapper
+{
+   position: absolute;
+   bottom :7rem;
+   left: 7rem;
+   text-align: center;
+   color: #fff;
+   text-align: center;
+}
+
+ .side-one  h2
+{
+   font-size: 2rem;
+   line-height: 3;
+   font-weight: 900;
+   text-transform: capitalize;
+  
+}
+
+ .side-one p
+{
+    letter-spacing:1px;
+    text-align: justify;
+    width: 400px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+
+.side-two
+{
+    width: 50%;
+    text-align:center;
+}
+
+.side-two h1
+{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 50;
+    line-height: 1;
+    margin-left: 110px;
+}
+
+form
+{
+    
+}
+
+.forms
+{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top:30px;
+}
+
+.forms label
+{
+    font-weight: 600;
+}
+
+.forms input[type=text]
+{
+    width: 70%;
+    height: 2rem;
+    padding: 20px 20px;
+     background-color:#f2edf3;
+     border: none;
+     border-radius: 0.5rem;
+}
+
+.forms textarea
+{
+    width: 70%;
+    height: 4rem;
+    padding: 20px 20px;
+     background-color:#f2edf3;
+     border: none;
+     border-radius: 0.5rem;
+     text-align: left;
+}
+
+.terms 
+{
+    width: 70%;
+}
+
+.terms h3
+{
+    padding-right: 230px;
+    font-weight: 200;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+input[type=submit]
+{
+    font: 700;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.or 
+{
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.lin
+{
+    text-transform: capitalize;
+    width: 30%;
+    height: 0.1rem;
+    margin-top: 12px;
+    background-color: #eee2e2;
+}
+
+footer
+{
+    margin-top: 2rem;
+}
