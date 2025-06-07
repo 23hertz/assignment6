@@ -3,114 +3,132 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: ;
 }
 
 body
 {
-    max-width: 100%;
-    line-height:1.6 ;
     font-family: Arial, sans-serif;
-    background-color: rgb(41, 40, 40);
+    background-color: #2f2f2f;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-.main
+.container
 {
-     width: 960px;
-     max-width: 1000px;
+    max-width: 960px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-.side-one 
-{
-    position:relative;
-    color: #fff;
-    text-align: center;
-    width: 40%;
-    height: 50%;
-    background-image:url(images/HD-wallpaper-wending-cubes-01-3d-cube-dark-abstract-black-render-rotating-rotation.jpg); */
-    background-size: 100% 100%;
-}
-
-.side-one img
-{
-    width: 100%;
-    height: 545px;
-    object-fit: fill;
 }
 
 .wrapper
 {
-   position: absolute;
-   bottom :7rem;
-   left: 1rem;
-   text-align: center;
-   color: #fff;
-   text-align: center;
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
- .side-one  h2
+.left-side
 {
-   font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position:relative;
+    color: #fff;
+    text-align: center;
+}
+
+.left-side img
+{
+    width: 100%;
+    height: 700px;
+    object-fit: fill;
+}
+
+.left-side .sideone-main
+{
+   position: absolute;
+   top: 25rem;
+   left: 0.1rem;
+   text-align: justify;
+   color: #fff;
+   padding: 20px;
+   line-height: 2;
+} 
+
+ .left-side header h2
+{
+    
+   font-size: 1.4rem;
    line-height: 3;
    font-weight: 900;
    text-transform: capitalize;
-   text-align: left;
 }
 
- .side-one p
+ .left-side p
 {
     letter-spacing:1px;
     text-align: justify;
     width: 300px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
     margin-top: 1rem;
 }
 
-.side-two
+.right-side
 {
-    width: 60%;
-    height: 50%;
-    text-align:center;
+    flex: 1;
+    /* text-align:center; */
     background-color: #fff;
-    padding: 1rem 0;
+    padding: 30px;
 }
 
-.side-two h1
+.right-side h1
 {
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: 50;
-    margin-top: 0.8rem;
-    margin-left: 80px;
+    margin-bottom: 20px;
 }
 
-.forms
+.right-side .form-group
+{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* .forms
 {
     width: 70%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
     padding-top:15px;
-}
+} */
 
-.forms label
+/* .forms label
 {
     font-size: 0.8rem;
     font-weight: 600;
+} */
+
+.form-group label
+{
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
-.forms input[type=text]
+/* .forms input[type=text]
 {
     width: 70%;
     height: 1rem;
@@ -118,33 +136,61 @@ body
      background-color:#f2edf3;
      border: none;
      border-radius: 0.5rem;
+} */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="url"]
+{
+  width: 70%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color:#f2edf3;
+  border: none;
+
 }
 
-.forms textarea
+.checkbox-container {
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 200;
+    opacity: 1;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+  width: 150px;
+  font:700;
+  font-size: 0.8rem;
+  background: #000;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* .terms 
 {
     width: 70%;
-    height: 3rem;
-    padding: 20px 20px;
-     background-color:#f2edf3;
-     border: none;
-     border-radius: 0.5rem;
-     text-align: left;
-}
+} */
 
-.terms 
-{
-    width: 70%;
-}
-
-.terms h3
+/* .terms h3
 {
     padding-right: 100px;
     font-weight: 200;
     font-size: 0.7rem;
     text-transform: uppercase;
-}
+} */
 
-input[type=submit]
+/* input[type=submit]
 {
     font: 700;
     width: 150px;
@@ -154,18 +200,39 @@ input[type=submit]
     background-color: black;
     color: #fff;
     text-transform: capitalize;
-}
+} */
 
-.or 
+/* .or 
 {
     margin-top: 0.5rem;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
     position: relative;
-} 
+}  */
 
-.nort h3
+.or {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0.8rem 0;
+  font-size: 14px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.lin
+{
+    text-transform: capitalize;
+    width: 30%;
+    height: 0.1rem;
+    margin-top: 5px;
+    background-color: #eee2e2;
+}
+
+/* .nort h3
 {
     font-size: 0.2;
     font-weight: 100;
@@ -178,12 +245,68 @@ input[type=submit]
     height: 0.1rem;
     margin-top: 5px;
     background-color: #eee2e2;
-}
+} */
 
-footer
+/* footer
 {
     margin-top:;
     text-align: center;
     font-size: 0.7rem;
     padding: 8px;
-} 
+}  */
+
+header h3
+{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.socials {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socials .fa{
+  width: 24px;
+  height: 24px;
+  color: #000;
+}
+
+.signin {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signin p a {
+  text-align: center;
+  color: #000;
+  text-decoration: underline;
+}
+
+.loginRight
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.loginRight h1
+{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* .loginRight .form-group
+{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+} */
